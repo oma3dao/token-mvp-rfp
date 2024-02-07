@@ -60,7 +60,7 @@ In the proposed token architecture of OMA3, several key actors play integral rol
 		* Board Bounty: All other Bounties
 * Computing Platform (e.g.- blockchain)
 
-![Figure 1]()
+![Figure 1](https://github.com/oma3dao/token-mvp-rfp/blob/main/MVP-Actors.png)
 
 These actors interact with each other and the System in various ways, as outlined in the use cases that follow.
 
