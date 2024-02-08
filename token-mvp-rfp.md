@@ -211,7 +211,7 @@ For a background on the section, read Section 4 of the [OMA3 Working Group Proce
 #### 1.1.3. Wallet
 #### 1.1.4. Development tools
 #### 1.1.5. Computing platform
-	#### 1.2. Malicious actors in OMA3 have administrative control of the System and could abuse this control.  The two types of malicious actor threats are:
+#### 1.2. Malicious actors in OMA3 have administrative control of the System and could abuse this control.  The two types of malicious actor threats are:
 #### 1.2.1. Single malicious Individual
 #### 1.2.2. Multiple malicious Individuals
 
@@ -229,16 +229,14 @@ For a background on the section, read Section 4 of the [OMA3 Working Group Proce
 #### 2.1.10. Representatives leave Member but remain Representatives in the Organization Wallet
 #### 2.1.11. Representative is part of two Organizations
 #### 2.1.12. Representative Wallet threats
-	#### 2.1.12.1. Private key lost so Representative no longer has access to the Representative Wallet
+#### 2.1.12.1. Private key lost so Representative no longer has access to the Representative Wallet
 #### 2.1.12.2. Private key stolen so an unauthorized individual has control of the Representative Wallet
 #### 2.1.12.3. Other auth mechanism compromised, like username/password, so an unauthorized individual has control of the Representative Wallet
 #### 2.1.12.4. Vendor that has admin control of the Wallet is compromised
-
-
-	#### 2.2. Leaving OMA3
+#### 2.2. Leaving OMA3
 #### 2.2.1. Organization is removed from OMA3 against its will and the reason for doing so is not justified
 #### 2.2.2. Organization is mistakenly removed from OMA3
-	#### 2.3. Modifying Representatives
+#### 2.3. Modifying Representatives
 #### 2.3.1. Representative is removed from Organization but now the Organization does not have the minimum number of signatures required by the Organization Wallet
 #### 2.3.2. Representatives are unavailable to sign a transaction
 #### 2.4. Third party is able to access membership data without consent of:
@@ -247,8 +245,8 @@ For a background on the section, read Section 4 of the [OMA3 Working Group Proce
 #### 2.4.3. Representative
 
 ### 3. Attendance
-	#### 3.1. Meeting chair enters incorrect data
-	#### 3.2. Meeting chair enters transactions without approval of meeting attendees
+#### 3.1. Meeting chair enters incorrect data
+#### 3.2. Meeting chair enters transactions without approval of meeting attendees
 
 ### 4. Bounties
 #### 4.1. Board Bounties
