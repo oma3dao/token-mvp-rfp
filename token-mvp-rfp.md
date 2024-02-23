@@ -314,7 +314,22 @@ Terminology definitions can be found in Section 5 of the [OMA3 Working Group Pro
 #### 1.4. SHALL have gas fees that do not preclude OMA3 use cases such as the Inter World Portaling System (e.g.- gas fees are too high to make the infrastructure usable)
 #### 1.5. SHALL minimize the regulatory compliance effort of launching a fungible token such as reporting, taxes and KYC
 #### 1.6. MAY KYC all participants using a user-controlled, privacy-preserving reputation protocol.
-#### 1.7. MAY be a new blockchain managed by OMA3
+#### 1.7. SHOULD offer interoperability with infrastructure OMA3 members use (e.g.- chains such as EOS, WAX, Polygon, and Chromia) for future OMA3 projects that integrate the fungible token.
+#### 1.8. SHOULD NOT be impacted by other applications running on the same infrastructure.
+#### 1.9. SHALL by production ready in 2024.
+#### 1.10. SHOULD offer tools that minimize the engineering and maintenance effort of OMA3.
+#### 1.11. MAY offer a migration path that allows quick time to market in 2024 and satisfaction of other requirements over time.
+#### 1.12. MAY have existing liquidity to hasten usage growth.
+#### 1.13. SHOULD be “battle tested” for all components related to security, such as:
+#### 1.13.1. Virtual machine
+#### 1.13.2. Consensus protocol
+#### 1.13.3. Hardware wallets
+#### 1.13.4. Multisig wallets
+#### 1.14. SHOULD NOT have a single point of centralization that is more centralized than OMA3’s governance.  Possible points of centralization include:
+#### 1.14.1. Sequencer
+#### 1.14.2. Data availability layer
+#### 1.14.3. Settlement layer
+#### 1.15. SHOULD NOT have a single point of centralization with governance that could be adverse to OMA3’s interests.
 ### 2. Privacy
 #### 2.1. The System SHALL allow the public to see the following information:
 #### 2.1.1. Membership status
