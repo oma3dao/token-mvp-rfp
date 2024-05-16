@@ -68,7 +68,7 @@ These actors interact with each other and the System in various ways, as outline
 
 The initiation of the token architecture in the OMA3 ecosystem begins with the System Launch, which involves the following step:
 
- The OMA3 Organization Wallet deploys the System's smart contracts on the selected Computing Platform.
+1. The OMA3 Organization Wallet deploys the System's smart contracts on the selected Computing Platform.
 
 This step sets up the infrastructure for soulbound tokens (SBTs), fungible tokens (FTs), and the bounty program.
 
@@ -77,126 +77,126 @@ This step sets up the infrastructure for soulbound tokens (SBTs), fungible token
 The Membership use case within the T-MVP encompasses several processes and functionalities for organizations within the OMA3 ecosystem, categorized as follows:
 
 Joining OMA3 (Creator level):
-Application and Fee Payment: Organization completes a membership application and pays the associated fee to join OMA3.
-KYC Process: OMA3 conducts KYC (know your customer) and (optionally) AML (anti money laundering) checks on the Organization.
-Wallet Setup: If necessary, representatives of the Organization set up their individual Representative Wallets.
-Organization Wallet Establishment: If necessary, the Organization establishes an Organization Wallet, configured to require signatures from multiple Representative Wallets.
-Membership Status Update: OMA3 updates the status of the Organization Wallet in the System to reflect its membership as a Creator Member.
-System Integration: The addresses of both the Organization and Representative Wallets are added to the System (e.g.- assigning an SBT to the Organization Wallet).
+1. Application and Fee Payment: Organization completes a membership application and pays the associated fee to join OMA3.
+2. KYC Process: OMA3 conducts KYC (know your customer) and (optionally) AML (anti money laundering) checks on the Organization.
+3. Wallet Setup: If necessary, representatives of the Organization set up their individual Representative Wallets.
+4. Organization Wallet Establishment: If necessary, the Organization establishes an Organization Wallet, configured to require signatures from multiple Representative Wallets.
+5. Membership Status Update: OMA3 updates the status of the Organization Wallet in the System to reflect its membership as a Creator Member.
+6. System Integration: The addresses of both the Organization and Representative Wallets are added to the System (e.g.- assigning an SBT to the Organization Wallet).
 
 Leaving OMA3:
-Initiation of Departure: An Organization's decision to leave OMA3 is triggered by either the Organization or OMA3.
-Status Update in System: OMA3 uses the System to update the status of the Organization Wallet to 'Non Member'.
+1. Initiation of Departure: An Organization's decision to leave OMA3 is triggered by either the Organization or OMA3.
+2. Status Update in System: OMA3 uses the System to update the status of the Organization Wallet to 'Non Member'.
 
 Modifying Representatives:
-Organization Wallet adds Representative to the System with required Representative Wallet signatures.
-Organization Wallet adds Representative to the Organization Wallet with required Representative Wallet signatures.
-Organization Wallet removes Representative from the Organization Wallet with required Representative Wallet signatures.
-Organization Wallet removes Representative from the System with required Representative Wallet signatures.
+1. Organization Wallet adds Representative to the System with required Representative Wallet signatures.
+2. Organization Wallet adds Representative to the Organization Wallet with required Representative Wallet signatures.
+3. Organization Wallet removes Representative from the Organization Wallet with required Representative Wallet signatures.
+4. Organization Wallet removes Representative from the System with required Representative Wallet signatures.
 
 ### Attendance Tracking Use Case
 
 The Attendance Tracking use case in the TWG's proposed system is designed to manage and document participation in various meetings and events within the OMA3 ecosystem. This process is essential for ensuring accountability and active participation of members in the governance and decision-making processes. The key components of this use case include:
 
 Recording Meeting Minutes and Attendance:
-The Leader uses the System to record meeting minutes in the System, including which Representatives attended the Group meeting.
+1. The Leader uses the System to record meeting minutes in the System, including which Representatives attended the Group meeting.
 
 ### Bounties Use Case
 
 The Bounties use case in the T-MVP is for incentivizing and rewarding specific tasks and contributions within the OMA3 ecosystem. It encompasses various aspects of bounty creation, fulfillment, and closure:
 
 Board Bounty Creation:
-Organization Wallets propose a new Board Bounty via the System.
-The Board then uses the System to review the proposal and decide whether to transform it into an open bounty or reject it.
+1. Organization Wallets propose a new Board Bounty via the System.
+2. The Board then uses the System to review the proposal and decide whether to transform it into an open bounty or reject it.
 
 Working Group Bounty Creation:
-Working Group Chair creates a Working Group Bounty using the System.
+1. Working Group Chair creates a Working Group Bounty using the System.
 
 Fulfilling Board Bounties:
-Members view open Board Bounties in the System and submit proposals for fulfillment.
-The Board reviews these proposals and votes on their approval, including determining the reward amounts.
+1. Members view open Board Bounties in the System and submit proposals for fulfillment.
+2. The Board reviews these proposals and votes on their approval, including determining the reward amounts.
 
 Fulfilling Working Group Bounties:
-Members use the System to submit proposals for open Working Group Bounties.
-These proposals are then reviewed and voted on by the respective Working Group.
+1. Members use the System to submit proposals for open Working Group Bounties.
+2. These proposals are then reviewed and voted on by the respective Working Group.
 
 Closing Board Bounties:
-The Board uses the System to close a bounty so that proposals can no longer be submitted.
+1. The Board uses the System to close a bounty so that proposals can no longer be submitted.
 
 Closing Working Group Bounties:
-Working Group Chairs use the System to close a bounty upon completion or when it is no longer relevant.
+1. Working Group Chairs use the System to close a bounty upon completion or when it is no longer relevant.
 
 ### Leadership Use Case
 
 The Leadership use case in the T-MVP outlines the processes involved in managing the leadership roles within OMA3. This includes the addition, removal, and tracking of leaders.
 
 Adding Leaders:
-Assignment of Roles: OMA3 enters a Representative into the System as a leader, including role such as Working Group Chair, Officer, or Committee Chair.
-Token Compensation: OMA3 records any token compensation associated with these leadership positions, such as points per hour, a periodic retainer, or a fixed fee.
+1. Assignment of Roles: OMA3 enters a Representative into the System as a leader, including role such as Working Group Chair, Officer, or Committee Chair.
+2. Token Compensation: OMA3 records any token compensation associated with these leadership positions, such as points per hour, a periodic retainer, or a fixed fee.
 
 Removing Leaders:
-OMA3 removes a Representative’s leadership status in the System.
+1. OMA3 removes a Representative’s leadership status in the System.
 
 Tracking Hours:
-Hour Submission: Representatives, including leaders, use System to fill out a form to input their work hours into the System.
-Approval Process: OMA3 uses System to review and approve the submitted hours, ensuring accuracy and accountability.
+1. Hour Submission: Representatives, including leaders, use System to fill out a form to input their work hours into the System.
+2. Approval Process: OMA3 uses System to review and approve the submitted hours, ensuring accuracy and accountability.
 
 ### Referrals Use Case
 
 The Referrals use case is designed to recognize and reward members for contributing to the growth and reach of the OMA3 ecosystem. This includes tracking and managing rewards for referrals related to press coverage and new memberships.
 
 Press Referrals:
-When a member successfully refers a press opportunity to OMA3, OMA3 records this contribution in the System with a specific Bounty amount.
+1. When a member successfully refers a press opportunity to OMA3, OMA3 records this contribution in the System with a specific Bounty amount.
 
 Membership Referrals:
-OMA3 enters the Member and the referred new member(s) into the System, including the Bounty amount.
+1. OMA3 enters the Member and the referred new member(s) into the System, including the Bounty amount.
 
 Referral Edits:
-OMA3 updates referral details in the System.
-OMA3 and members affected by the updates can see the update transaction in the System.
+1. OMA3 updates referral details in the System.
+2. OMA3 and members affected by the updates can see the update transaction in the System.
 
 ### Fungible Token Use Case
 
 The Fungible Token design is intended to augment the System to encourage contribution and track reputation. This section outlines the key processes and policies governing the fungible tokens:
 
 Token Deployment and Allocation:
-Smart Contract Deployment:** OMA3 deploys the System’s fungible token Smart Contract on the Computing Platform.
-Distribution of Tokens: OMA3 conducts an initial distribution of fungible tokens, airdropping them to Organization Wallets.  This is the token generation event (TGE).
-Lockup Period: The System enforces a lockup period for the fungible tokens, during which the tokens cannot be transferred or traded to non-members.
-Transfer Mechanisms: Post lockup period, Organization Wallets may transfer fungible tokens to another wallet or account via a Computing Platform.
+1. Smart Contract Deployment:** OMA3 deploys the System’s fungible token Smart Contract on the Computing Platform.
+2. Distribution of Tokens: OMA3 conducts an initial distribution of fungible tokens, airdropping them to Organization Wallets.  This is the token generation event (TGE).
+3. Lockup Period: The System enforces a lockup period for the fungible tokens, during which the tokens cannot be transferred or traded to non-members.
+4. Transfer Mechanisms: Post lockup period, Organization Wallets may transfer fungible tokens to another wallet or account via a Computing Platform.
 
 ### Board Staking
 
 For members wishing to join the OMA3 Board, a staking mechanism is implemented where members stake fungible tokens as part of their commitment to the ecosystem.
 
-Member applies to join the OMA3 Board and lists the number of fungible tokens they intend to stake if they join the board.
-Board votes to accept Member as board representative.
-Member pays annual fee.
-Member stakes fungible tokens.
-Bad behavior by the Member (as defined in the Organizational Documents) may result in slashing stake based on a Board vote.
+1. Member applies to join the OMA3 Board and lists the number of fungible tokens they intend to stake if they join the board.
+2. Board votes to accept Member as board representative.
+3. Member pays annual fee.
+4. Member stakes fungible tokens.
+5. Bad behavior by the Member (as defined in the Organizational Documents) may result in slashing stake based on a Board vote.
 
 ### Membership Staking
 
 In the future OMA3 may require other membership levels to hold fungible tokens. This use case flow is the same as Board Staking except members would not have to request permission to join the membership level.
 
-Entity purchases fungible tokens.
-OMA3 verifies Entity’s information.
-Optional- OMA3 issues Entity a SBT.
+1. Entity purchases fungible tokens.
+2. OMA3 verifies Entity’s information.
+3. Optional- OMA3 issues Entity a SBT.
 
 ### Bounty Proposal Staking
 
 As part of submitting a Bounty proposal, members have the option to stake a certain number of fungible tokens. This staking acts as a guarantee for their commitment to fulfilling the bounty.
 
-Member uses System to stake fungible tokens with their bounty proposal.
-Board votes to slash stake because Member did not perform bounty.
-If the vote passes, fungible tokens are transferred to OMA3’s Treasury.
+1. Member uses System to stake fungible tokens with their bounty proposal.
+2. Board votes to slash stake because Member did not perform bounty.
+3. If the vote passes, fungible tokens are transferred to OMA3’s Treasury.
 
 ### Optional Use Cases
 
 OMA3 would also like to integrate the following use cases that are commonly implemented in other DAOs.  These include:
 
-Tracking Github commits:  Many DAOs reward token allocation points for committing code to repositories and
-Reposting, commenting, and liking OMA3 announcements on social media.  OMA3 values Members that take the effort to amplify the OMA3 mission and its projects on social media.
+* Tracking Github commits:  Many DAOs reward token allocation points for committing code to repositories and
+* Reposting, commenting, and liking OMA3 announcements on social media.  OMA3 values Members that take the effort to amplify the OMA3 mission and its projects on social media.
 
 There are several tools in the market that enable these use cases and OMA3 welcomes proposals from their creators.
 
