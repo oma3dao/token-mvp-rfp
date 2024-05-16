@@ -1,9 +1,9 @@
 # OMA3 Token Architecture MVP Request for Proposals (RFP)
-# OMA3 Token Working Group (TWG)
+# OMA3 Token and Infrastructure Working Group (TIWG)
 
 ## Introduction
 
-This Request for Proposals (RFP) is released by OMA3’s Token Working Group (TWG). The purpose of this RFP is to solicit implementation proposals for the minimum viable product of OMA3’s token architecture (T-MVP).  It is also a call for non-members with existing products in this area to join OMA3 and help build the T-MVP.
+This Request for Proposals (RFP) is released by OMA3’s Token and Infrastructure Working Group (TWG). The purpose of this RFP is to solicit implementation proposals for the minimum viable product of OMA3’s token architecture (T-MVP).  It is also a call for non-members with existing products in this area to join OMA3 and help build the T-MVP.
 
 OMA3’s token architecture was first introduced in mid-2023 with the release of its [Soulbound Token Litepaper](https://github.com/oma3dao/sbt-litepaper).  This litepaper has now been replaced with the [OMA3 Token Litepaper](https://github.com/oma3dao/token-litepaper) that adds a fungible token to the foundational soulbound token.
 
@@ -58,7 +58,7 @@ In the proposed token architecture of OMA3, several key actors play integral rol
 	* A task that rewards cash and reputation points for fulfillment.
 		* Working Group Bounty: Bounty created by a Working Group Chair
 		* Board Bounty: All other Bounties
-* Computing Platform (e.g.- blockchain)
+* Computing Platform (e.g.- blockchain)- initially Ethereum with a potential migration to one or more other chains in the future.
 
 ![Figure 1](https://github.com/oma3dao/token-mvp-rfp/blob/main/MVP-Actors.png)
 
@@ -79,8 +79,8 @@ The Membership use case within the T-MVP encompasses several processes and funct
 Joining OMA3 (Creator level):
 Application and Fee Payment: Organization completes a membership application and pays the associated fee to join OMA3.
 KYC Process: OMA3 conducts KYC (know your customer) and (optionally) AML (anti money laundering) checks on the Organization.
-Wallet Setup: Representatives of the Organization set up their individual Representative Wallets.
-Organization Wallet Establishment: The Organization establishes an Organization Wallet, configured to require signatures from multiple Representative Wallets.
+Wallet Setup: If necessary, representatives of the Organization set up their individual Representative Wallets.
+Organization Wallet Establishment: If necessary, the Organization establishes an Organization Wallet, configured to require signatures from multiple Representative Wallets.
 Membership Status Update: OMA3 updates the status of the Organization Wallet in the System to reflect its membership as a Creator Member.
 System Integration: The addresses of both the Organization and Representative Wallets are added to the System (e.g.- assigning an SBT to the Organization Wallet).
 
@@ -157,22 +157,22 @@ OMA3 and members affected by the updates can see the update transaction in the S
 
 ### Fungible Token Use Case
 
-The Fungible Token design is intended to create a System encourages. This section outlines the key processes and policies governing the fungible tokens:
+The Fungible Token design is intended to augment the System to encourage contribution and track reputation. This section outlines the key processes and policies governing the fungible tokens:
 
 Token Deployment and Allocation:
 Smart Contract Deployment:** OMA3 deploys the System’s fungible token Smart Contract on the Computing Platform.
-Distribution of Tokens: OMA3 conducts an initial distribution of fungible tokens, airdropping them to Organization Wallets.
-Holding Period: The System enforces a predefined holding period for the fungible tokens, during which the tokens cannot be transferred or traded to non-members.
-Transfer Mechanisms: Post holding period, Organization Wallets may transfer fungible tokens to another wallet or account via a Computing Platform.
+Distribution of Tokens: OMA3 conducts an initial distribution of fungible tokens, airdropping them to Organization Wallets.  This is the token generation event (TGE).
+Lockup Period: The System enforces a lockup period for the fungible tokens, during which the tokens cannot be transferred or traded to non-members.
+Transfer Mechanisms: Post lockup period, Organization Wallets may transfer fungible tokens to another wallet or account via a Computing Platform.
 
 ### Board Staking
 
 For members wishing to join the OMA3 Board, a staking mechanism is implemented where members stake fungible tokens as part of their commitment to the ecosystem.
 
-Member requests to join the OMA3 Board
+Member applies to join the OMA3 Board and lists the number of fungible tokens they intend to stake if they join the board.
 Board votes to accept Member as board representative.
-Member pays annual fee
-Member stakes fungible tokens to show commitment and be part of the Board
+Member pays annual fee.
+Member stakes fungible tokens.
 Bad behavior by the Member (as defined in the Organizational Documents) may result in slashing stake based on a Board vote.
 
 ### Membership Staking
@@ -189,7 +189,7 @@ As part of submitting a Bounty proposal, members have the option to stake a cert
 
 Member uses System to stake fungible tokens with their bounty proposal.
 Board votes to slash stake because Member did not perform bounty.
-Fungible tokens are transferred to OMA3’s Treasury.
+If the vote passes, fungible tokens are transferred to OMA3’s Treasury.
 
 ### Optional Use Cases
 
@@ -280,18 +280,17 @@ For a background on the section, read Section 4 of the [OMA3 Working Group Proce
 #### 6.5. Member incorrectly claims a referral
 
 ### 7. Fungible Token
-#### 7.1. Circumvention of holding period
-#### 7.2. Selling tokens outside approved membership sandbox in the holding period
+#### 7.1. Circumvention of lockup period
+#### 7.2. Selling tokens outside approved membership sandbox in the lockup period
 #### 7.3. Dumping tokens and crashing the price
 #### 7.4. Fluctuating market value changes stake value
-#### 7.5. Fluctuating market value changes fee price with OMA3 infrastructure
-#### 7.6. Members need to acquire more tokens before tokens are listed on public exchanges
-#### 7.7. Token holders circumvent AML/KYC checks
-#### 7.8. Orphaned tokens (lost wallet keys or tokens sent to wrong address)
-#### 7.9. Stolen tokens
-#### 7.10. Privacy
-#### 7.10.1. KYC’d wallets are not pseudonymous
-#### 7.10.2. All transactions are public and therefore violate privacy laws
+#### 7.5. Members need to acquire more tokens before tokens are listed on public exchanges
+#### 7.6. Token holders circumvent AML/KYC checks
+#### 7.7. Orphaned tokens (lost wallet keys or tokens sent to wrong address)
+#### 7.8. Stolen tokens
+#### 7.9. Privacy
+#### 7.9.1. KYC’d wallets are not pseudonymous
+#### 7.9.2. All transactions are public and therefore violate privacy laws
 
 ### 8. Staking
 #### 8.1. Board staking:  Board unfairly slashes a Member’s stake
@@ -311,11 +310,11 @@ Terminology definitions can be found in Section 5 of the [OMA3 Working Group Pro
 #### 1.1. SHOULD be EVM compatible.
 #### 1.2. SHALL be interoperable with other ecosystem assets like the OMA3 fungible token.
 #### 1.3. SHOULD also host the OMA3 fungible token.
-#### 1.4. SHALL have gas fees that do not preclude OMA3 use cases such as the Inter World Portaling System (e.g.- gas fees are too high to make the infrastructure usable)
+#### 1.4. SHALL have gas fees that do not preclude other potential OMA3 use cases such as the Inter World Portaling System (e.g.- gas fees are too high to make the infrastructure usable)
 #### 1.5. SHALL minimize the regulatory compliance effort of launching a fungible token such as reporting, taxes and KYC
 #### 1.6. MAY KYC all participants using a user-controlled, privacy-preserving reputation protocol.
 #### 1.7. SHOULD offer interoperability with infrastructure OMA3 members use (e.g.- chains such as EOS, WAX, Polygon, and Chromia) for future OMA3 projects that integrate the fungible token.
-#### 1.8. SHOULD NOT be impacted by other applications running on the same infrastructure.
+#### 1.8. SHOULD NOT allow OMA3 applications to be adversely impacted by other applications running on the same infrastructure.
 #### 1.9. SHALL by production ready in 2024.
 #### 1.10. SHOULD offer tools that minimize the engineering and maintenance effort of OMA3.
 #### 1.11. MAY offer a migration path that allows quick time to market in 2024 and satisfaction of other requirements over time.
@@ -363,8 +362,8 @@ Terminology definitions can be found in Section 5 of the [OMA3 Working Group Pro
 #### 3.11. The System SHOULD give OMA3 or Support the ability to correct events that factor into reputation or contributions.
 
 ### 4. Application
-#### 4.1. The System SHALL support all use cases.
-#### 4.2. The System SHOULD address all threats.
+#### 4.1. The System SHALL support all use cases listed in this document.
+#### 4.2. The System SHOULD address all threats listed in this document.
 #### 4.3. The System SHOULD use proven existing standards and code bases when possible.
 
 ### 5. User Interface
@@ -376,14 +375,23 @@ Terminology definitions can be found in Section 5 of the [OMA3 Working Group Pro
 #### 6.1. The System MAY allow an OMA3 judicial board to reverse token transactions in case of wrong-doing
 
 ### 7. System Fungible Token (FT)
-#### 7.1. The FT SHALL support use by all members’ platforms
-#### 7.2. The FT SHOULD support swaps with all members’ tokens
-#### 7.3. The FT MAY allow OMA3 to reverse transfers via a judicial process that MAY charge a fee to the initiating party
-#### 7.4. The FT SHALL have an initial holding period after deployment
-#### 7.5. The FT SHALL only be allowed to be used by OMA3 members during the initial holding period
-#### 7.6. The FT MAY require KYC for any wallet that holds the FT.
-#### 7.7. The FT MAY keep FT transaction data private to the parties involved.
-#### 7.8. OMA3 MAY take a similar role to the FT that Circle plays with USDC across multiple blockchains.
+#### 7.1. The FT SHALL support a lockup period after TGE that consists of a cliff and subsequent linear release of tokens from the lockup.
+#### 7.2. The FT SHALL only be allowed to be used by OMA3 members during the initial lockup period
+#### 7.3. The FT SHOULD support different characteristics, including lockup periods and staking, for different issuance categories of token holders (e.g.- founders vs contributors).
+#### 7.4. The FT SHOULD allow staking use cases during the lockup period.
+#### 7.5. The FT smart contract SHOULD be upgradeable using a recognized standard (e.g.- ERC-1822).
+#### 7.6. The FT upgrade capability SHOULD have the ability to become immutable in the future.
+#### 7.7. The FT SHOULD support multisig controlled by a voting body of OMA3 for all development and deployment operations.
+#### 7.8. The FT SHOULD support available tools that can migrate the FT to another chain.
+#### 7.9. The FT SHOULD have the ability to become the native token on another chain.
+#### 7.10. The FT SHOULD have a limited supply.
+#### 7.11. The FT SHALL support use by all members’ platforms
+#### 7.12. The FT SHOULD support swaps with all members’ tokens
+#### 7.13. The FT MAY allow OMA3 to reverse transfers via a judicial process that MAY charge a fee to the initiating party
+#### 7.14. The FT MAY support an existing cross-chain standard format.
+#### 7.15. The FT MAY require KYC for any wallet that holds the FT.
+#### 7.16. The FT MAY keep FT transaction data private to the parties involved.
+#### 7.17. OMA3 MAY take a similar role to the FT that Circle plays with USDC across multiple blockchains.
 
 ### 8. Wallets
 #### 8.1. The System SHOULD maintain a whitelist of allowed Representative and Organization Wallets.
